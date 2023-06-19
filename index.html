@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <!-- BEGIN PART 1 -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Aarin Salot</title>
+  <!-- END PART 1 -->
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <!-- BEGIN PART 2 -->
+    <h3>
+      <!-- TODO: Check if works -->
+      <a href="https://AarinSalot.github.io/" style="color: var(--clr-primary)">AS</a>
+    </h3>
+    <!-- END PART 2 -->
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#experience">Professional Experience</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#clubs">Clubs and Activities</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- BEGIN PART 5 -->
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <!-- 
+        5.1: What does this button tag correspond to on the site? 
+      
+        switching between light and dark mode
+      -->
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- 
+        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
+        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
+        make it so that this button appears on screen? 
+        Hint: remember what @media (max-width: 600px) means.
+
+        The button is shown when the display is a certain size. Make the display flexible to make the button appear.
+       -->
+
+      <!-- END PART 5 -->
+    </nav>
+  </header>
+
+  <main>
+    
+    <div class="top_intro">
+    
+      <div class="about class">
+        <!-- BEGIN PART 6 -->
+        <h1>Hi, I'm <span class="about__name">Aarin</span></h1>
+        <h2 class="about__role">CS @ UC Berkeley</h2>
+        <p class="about__desc">I'm a junior studying computer science at UC Berkeley interested in software engineering and machine learning. I'm passionate about creating impactful apps and love learning new skills!</p>
+        <!-- END PART 6 -->
+        <div class="about__contact center">
+          <!-- TODO: Change to resume link, google drive link -->
+          <a href="file:///Users/janani/Downloads/Janani_Sriram_Resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a href="https://github.com/AarinSalot" aria-label="github" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/aarinsalot/" aria-label="linkedin" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="img">
+        <img src="./aarinsalot.jpg" alt="headshot" width="400px" height="400px" style="border-radius: 50%;">
+      </div>
+    </div>
+
+    <section id="experience" class="section experience">
+      <h2 class="section__title">Professional Experience</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <h3>Currently @ AeroVironment</h3>
+          <p class="project__description" style="font-weight:bold;">Software Engineering Intern</p>
+          <p class="project__description">
+            Automized daily regression testing and enhanced logging to notify engineers of vehicle controller failures. 
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C#</li>
+            <li class="project__stack-item">.NET</li>
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">HTML</li>
+            <li class="project__stack-item">CSS</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+
+        </div>
+
+        <div class="project">
+          <h3>Clarity Technologies</h3>
+          <p class="project__description" style="font-weight:bold;">Software Consultant</p>
+          <p class="project__description">
+            Built front-end for Alzheimer's research platform to display real-time trial metrics.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">React.js</li>
+            <li class="project__stack-item">HTML</li>
+            <li class="project__stack-item">CSS</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>   
+        </div>
+
+        <div class="project">
+          <h3>EECS Department</h3>
+          <p class="project__description" style="font-weight:bold;">Academic Student Employee</p>
+          <p class="project__description">
+            Taught Data Structures and Algorithms concepts in Java, debugged student code, held Office Hours, and graded homework.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">IntelliJ</li>
+            <li class="project__stack-item">JUnit</li>
+          </ul>
+
+          <a href="https://sp23.datastructur.es/staff.html#tutors" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          
+          <!-- To space out the link above, added margin-top-->
+        </div>
+
+        <!-- END PART 8 -->
+      </div>
+    
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <h3>SnapCycle</h3>
+          <p class="project__description">
+            Utilizes device camera and AI image recognization to offer guidance on proper trash disposal methods.
+          </p>
+          <p class="project__description">
+            Awarded "Most Sustainable Hack" at AECtech hackathon LA 2023. 
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Flask</li>
+            <li class="project__stack-item">JavaScript</li>
+            <li class="project__stack-item">Vue.js</li>
+            <li class="project__stack-item">OpenAI API</li>
+            <li class="project__stack-item">Salesforce BLIP</li>
+          </ul>
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://www.figma.com/proto/sk4tTP6qy2wUn7eslqg4ht/Slides?type=design&node-id=229-17&scaling=contain&page-id=229%3A16" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="https://github.com/AarinSalot/SnapCycle" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <!-- TOD0: Add Github Link to this-->
+          <h3>Immerse</h3>
+          <p class="project__description">
+            Interactive AI-driven 3D game aimed to educate children about cancer and the immune system. 
+          </p>
+          <p class="project__description">
+            Received "Best Project" award by audience at Virtual Worlds Hackathon LA 2023.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Unity</li>
+            <li class="project__stack-item">C#</li>
+            <li class="project__stack-item">Inworld AI</li>
+            <li class="project__stack-item">Blockcade Labs AI</li>
+          </ul>
+
+          <a href="https://www.canva.com/design/DAFle8OR_VQ/nlzyy3gMjHYV9Zx8a3Ae9w/edit?utm_content=DAFle8OR_VQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="https://github.com/AarinSalot/Immerse" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+
+        <div class="project">
+          <h3>SayLess</h3>
+          <p class="project__description">
+            Visual communication platform that utilizes AI to generate sentences for users with speech impairments. 
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">PyQt5</li>
+            <li class="project__stack-item">GPT-J</li>
+          </ul>
+
+      
+          <a href="https://github.com/gundralaa/focus_pocus" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+       
+
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+
+
+        
+
+        
+        <!-- END PART 8 -->
+      </div>
+
+      <div class="projects__grid">
+
+        <div class="project">
+          <h3>Matrix Convolutions</h3>
+          <p class="project__description">
+            Explored parallelism through 2D Matrix Convolutions.</p>
+          <p class="project__description">Achieved a 7.9x speedup over single threaded performance using OpenMP multithreading and Intel SIMD instructions, 2.6x speedup using multiple processes with Open MPI.</p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C</li>
+            <li class="project__stack-item">OpenMP</li>
+            <li class="project__stack-item">Open MPI</li>
+            <li class="project__stack-item">Intel Intrinsics</li>
+          </ul>
+
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+        
+        <div class="project">
+          <h3>Gitlet</h3>
+          <p class="project__description">
+            Miniature version of Git. 
+          </p>
+          <p class="project__description">
+            Can create and switch between branches, merge branches with both fast-forward and three-way merge options, view commit history, and undo certain commit actions.
+          </p>
+          
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JUnit</li>
+          </ul>
+
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+        <div class="project">
+          <h3>Ataxx</h3>
+          <p class="project__description">
+            Strategy game with GUI and AI opponent using game trees, minimax-algorithm, and alpha-beta pruning. 
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JUnit</li>
+          </ul>
+
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+      </div>
+    </section>
+
+    <section id="clubs" class="section experience">
+      <h2 class="section__title">Clubs and Activities</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <h3>Neurotech@Berkeley</h3>
+          <p class="project__description" style="font-weight:bold;">Software Engineer</p>
+          <p class="project__description">
+            Developing brain-computer interfaces through EEG analysis and machine learning. 
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://neurotech.berkeley.edu/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        
+        <div class="project">
+          <h3>CS Mentors</h3>
+          <p class="project__description" style="font-weight:bold;">Senior Mentor</p>
+          <p class="project__description">
+            Lead weekly lectures for Data Structures and Algorithms course at UC Berkeley.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://csmentors.berkeley.edu/#/bios/cs61b" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>EECS Department</h3>
+          <p class="project__description" style="font-weight:bold;">Academic Intern</p>
+          <p class="project__description">
+            Taught foundational programming concepts such as recursion, OOP, and complexity analysis. 
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">SQL</li>
+            <li class="project__stack-item">Scheme</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://inst.eecs.berkeley.edu/~cs61a/sp22/academic-interns/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>RCSA Corporate Relations</h3>
+          <p class="project__description" style="font-weight:bold;">Commitee Member</p>
+          <p class="project__description">
+            Facilitate professional development workshops to connect with industry and academia.
+          </p>
+
+          <ul class="project__stack">
+          </ul>
+
+          <a href=" https://rcsa.berkeley.edu/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div> 
+      </div>
+    </section>
+
+
+    <section class="section skills" id="skills">
+      <!-- BEGIN PART 10 -->
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">Application Engineering (Python, Java, C#)
+        </li>
+        <li class="skills__list-item btn btn--plain">Web Development (HTML, CSS, JavaScript, React.js)  
+        </li>
+        <li class="skills__list-item btn btn--plain">Embedded Systems (C, C++)
+        </li>
+        <li class="skills__list-item btn btn--plain">Machine Learning (Python)
+        </li>
+        
+        <li class="skills__list-item btn btn--plain">Data Structures & Algorithms</li>
+        <li class="skills__list-item btn btn--plain">Teaching Pedagogy</li>
+      </ul>
+      <!-- END PART 10 -->
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:aarin.salot@berkeley.edu">
+        <span class="btn btn--outline" style="margin-left: 493px; margin-right: 493px;">
+          Email me
+        </span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- BEGIN PART 12 -->
+    <a href="/" class="link footer__link">
+      Created By Aarin Salot
+    </a>
+    <!-- END PART 12 -->
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
